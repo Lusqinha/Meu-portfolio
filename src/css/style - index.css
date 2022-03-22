@@ -1,0 +1,16 @@
+
+
+.txtColor{
+    color: white;
+}
+
+.crsImg{
+    object-fit: cover;
+    object-position: auto 45%;
+    height: 500px;
+}
+
+.fonteNova{
+    font-family: 'Pacifico', cursive;
+    font-family: 'Playfair Display', serif;
+}
