@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,83 +8,161 @@
     <title>Lucas | Portifólio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display&display=swap" rel="stylesheet"> 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="src\css\style - index.css" rel="stylesheet">
 </head>
+
 <body>
     <!--  -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
-              <a class="navbar-brand fonteNova" href="#">Lucas | Portifólio</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <li><a class="nav-link" href="github.com/Lusqinha" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-                  <li><a class="nav-link" href="https://www.linkedin.com/in/lucas-borges-da-silva-sls/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                  <li><a class="nav-link" href="#">Certificados</a></li>
+                <a class="navbar-brand fonteNova" href="#">Lucas | Portifólio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <li><a class="nav-link" href="github.com/Lusqinha" target="_blank"
+                                rel="noopener noreferrer">GitHub</a></li>
+                        <li><a class="nav-link" href="https://www.linkedin.com/in/lucas-borges-da-silva-sls/"
+                                target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                        <li><a class="nav-link" href="#">Certificados</a></li>
+                    </div>
                 </div>
-              </div>
             </div>
-          </nav>
+        </nav>
     </header>
     <!--  -->
     <main>
-        <section id="carrossel">
-            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-interval="3500" data-bs-ride="carousel" data-bs-touch="false">
+        <section class="shadow-lg rounded" id="carrossel">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-interval="3500"
+                data-bs-ride="carousel" data-bs-touch="false">
                 <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="src\img\carrossel1.jpg" class="d-block w-100 crsImg img-fluid" alt="Imagem ilustrativa de uma sala de lazer">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h2 class="fonteNova">| Front-End |</h2>
-                        <p>No momento estou focado em evoluir meus conhecimentos em <strong>JavaScript</strong> e <strong>Bootstrap</strong>, assim como aos poucos estou melhorando meus conhecimentos em <strong>Tailwind</strong>.</p>
+                    <div class="carousel-item active">
+                        <img src="src\img\carrossel1.jpg" class="d-block w-100 crsImg img-fluid"
+                            alt="Imagem ilustrativa de uma sala de lazer">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="fonteNova">| Front-End |</h2>
+                            <p>No momento estou focado em evoluir meus conhecimentos em <strong>JavaScript</strong> e
+                                <strong>Bootstrap</strong>, assim como aos poucos estou melhorando meus conhecimentos em
+                                <strong>Tailwind</strong>.</p>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="carousel-item">
+                        <img src="src\img\carrossel2.jpg" class="d-block w-100 crsImg"
+                            alt="Imagem ilustrativa com computadores antigos e video games">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="fonteNova">| Back-End |</h2>
+                            <p><strong>Python</strong> e <strong>Noje.js</strong> são meus pontos mais fortes, porém
+                                venho evoluindo meu <strong>C#</strong>.</p>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="prev">
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="next">
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                </div>
-                <!--  -->
-                <div class="carousel-item">
-                    <img src="src\img\carrossel2.jpg" class="d-block w-100 crsImg" alt="Imagem ilustrativa com computadores antigos e video games">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h2 class="fonteNova">| Back-End |</h2>
-                        <p><strong>Python</strong> e <strong>Noje.js</strong> são meus pontos mais fortes, porém venho evoluindo meu <strong>C#</strong>.</p>
-                </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
         </section>
-
-        <section id="bio">
+        <!--  -->
+        <section id="proficiencias">
+            <nav class="navbar navbar-dark p-3 icoColors">
+                <div class="container">
+                  <a class="navbar-brand">
+                    <img src="svg\icoJavascript.svg"class="icoSize" alt="Icone Javascript">
+                  </a>
+                  <a class="navbar-brand">
+                    <img src="svg/icoNodejs.svg"class="icoSize" alt="Icone NodeJs">
+                  </a>
+                  <a class="navbar-brand">
+                    <img src="svg/icoPython.svg"class="icoSize" alt="Icone Python">
+                  </a>
+                  <a class="navbar-brand">
+                    <img src="svg\icoPhp.svg"class="icoSize" alt="Icone Php">
+                  </a>
+                  <a class="navbar-brand">
+                    <img src="svg\icoBootstrap.svg"class="icoSize" alt="Icone Bootstrap">
+                  </a>
+                  <a class="navbar-brand">
+                    <img src="svg\icoCss3.svg"class="icoSize" alt="Icone Css">
+                  </a>
+                  <a class="navbar-brand">
+                    <img src="svg\icoHtml5.svg"class="icoSize" alt="Icone Html">
+                  </a>
+                  <a class="navbar-brand">
+                    <img src="svg\icoMysql.svg"class="icoSize" alt="Icone Mysql">
+                  </a>
+                </div>
+              </nav>
+        </section>
+        <!--  -->
+        <section class="bgColor p-4" id="bio">
             <div class="container">
-                <h1 class="titulo text-center">Front-End</h1>
-                <p class="texto">
-                    O estudo do <strong>Front-End</strong> foi introduzido à mim por um amigo que, na época também estava entrando nesse meio, no começo busquei alguns conhecimentos soltos sobre <strong>HTML</strong> mas acabei deixando de lado para me focar em <strong>Python</strong>, que na época, foi a linguagem com qual eu aprendia a lógica de programação e os conhecimentos que seriam o alicerce para tudo que viria a estudar no futuro.
+                <h1 class="titulo titleColor fonteNova text-center">Front-End</h1>
+                <p class="txtColor">
+                    O estudo do <strong>Front-End</strong> foi introduzido à mim por um amigo que, na época também
+                    estava entrando nesse meio, no começo busquei alguns conhecimentos soltos sobre
+                    <strong>HTML</strong> mas acabei deixando de lado para me focar em <strong>Python</strong>, que na
+                    época, foi a linguagem com qual eu aprendia a lógica de programação e os conhecimentos que seriam o
+                    alicerce para tudo que viria a estudar no futuro.
                 </p>
-                    <p>Após quase um ano estudando Python decidi que queria experimentar a tão lembrada linguagem que manda na web como conhecemos, o <strong>JavaScript</strong>, é óbvio que toda essa mística chama muita atenção, e admito que antes de começar sentia um pouco de receio, já que era um escopo de aprendizado muito grande para alguém acostumado a tanto tempo com o mesmo processo, mas após uma breve olhada na documentação vi que não havia nada de muito engenhoso que eu já houvesse testado em outra linguaguem antes. Ao por em prática foi amor a primeira vista, uma linguagem tão ativa e com tantas funcionalidades, exatamente como eu queria que fosse, com algumas implementações simples já pude ter uma grande retorno prática e então veio o estalo que me fez entrar com força no <strong>Bootstrap</strong>, eu queria algo que torna-se mais prático o deselvovimento da base, para que eu tivesse liberdade de tomar o tempo que fosse necessário para me dedicar ao JS; mais recentemente pude entrar em contato com o <strong>Tailwind</strong>, que dispõe de uma aparência mais moderna e com diversos tipos de personalização, claro que não sou alguém com profundo entendimento no mesmo, mas sempre que posso tento utilizá-lo para continuar exercitando suas utilidades na prática.</p>
+                <p class="txtColor">
+                    Após quase um ano estudando Python decidi que queria experimentar a tão lembrada linguagem que manda
+                    na web como conhecemos, o <strong>JavaScript</strong>, é óbvio que toda essa mística chama muita
+                    atenção, e admito que antes de começar sentia um pouco de receio, já que era um escopo de
+                    aprendizado muito grande para alguém acostumado a tanto tempo com o mesmo processo, mas após uma
+                    breve olhada na documentação vi que não havia nada de muito engenhoso que eu já houvesse testado em
+                    outra linguaguem antes. Ao por em prática foi amor a primeira vista, uma linguagem tão ativa e com
+                    tantas funcionalidades, exatamente como eu queria que fosse, com algumas implementações simples já
+                    pude ter uma grande retorno prática e então veio o estalo que me fez entrar com força no
+                    <strong>Bootstrap</strong>, eu queria algo que torna-se mais prático o deselvovimento da base, para
+                    que eu tivesse liberdade de tomar o tempo que fosse necessário para me dedicar ao JS; mais
+                    recentemente pude entrar em contato com o <strong>Tailwind</strong>, que dispõe de uma aparência
+                    mais moderna e com diversos tipos de personalização, claro que não sou alguém com profundo
+                    entendimento no mesmo, mas sempre que posso tento utilizá-lo para continuar exercitando suas
+                    utilidades na prática.
                 </p>
-                <h2 class="titulo text-center">Python</h2>
-                <p class="texto">
-                    Minha relação com <strong>Python</strong> é tão longa quanto simples, eu acabei aprendendo e praticando intuitivamente pois eu sempre usei ele para automativar algumas tarefas repetitivas do dia à dia, ou até mesmo para fazer alguma brincadeira com amigos, usei também para fazer uma calculadora para problemas específicos que recebia durante as aulas de física e matemática na escola. Hoje em dia venho tentando implementá-lo na área de <strong>Front</strong> por meio do <strong>Django</strong> e do <strong>Flask</strong>, mas é claro, que onde ele brilha de verdade é no <strong>Back-End</strong>;
+
+                <h2 class="titulo titleColor fonteNova text-center">Back-End</h2>
+                <p class="txtColor">
+                    Minha relação com <strong>Python</strong> é tão longa quanto simples, eu acabei aprendendo e
+                    praticando intuitivamente pois eu sempre usei ele para automativar algumas tarefas repetitivas do
+                    dia à dia, ou até mesmo para fazer alguma brincadeira com amigos, usei também para fazer uma
+                    calculadora para problemas específicos que recebia durante as aulas de física e matemática na
+                    escola. Hoje em dia venho tentando implementá-lo na área de <strong>Front</strong> por meio do
+                    <strong>Django</strong> e do <strong>Flask</strong>, mas é claro, que onde ele brilha de verdade é
+                    no <strong>Back-End</strong>
                 </p>
-                </p>
-                Depois que vim a aprender o JavaScript também passei a utilizar o <strong>Node.js</strong> nos meus projetos de <strong>Back-End</strong>, eu também estou me aprofundando no <strong>PHP</strong> e no <strong>MySQL</strong> para aplicar em meus projetos mas ainda não tenho certeza se eu estou aproveitando bem o que eu aprendi, porém mesmo assim estou sempre a procura de novos conhecimentos e estou sempre pronto para novos desafios.
+                <p class="txtColor">
+                Depois que vim a aprender o JavaScript também passei a utilizar o <strong>Node.js</strong> nos meus
+                projetos de <strong>Back-End</strong>, eu também estou me aprofundando no <strong>PHP</strong> e no
+                <strong>MySQL</strong> para aplicar em meus projetos mas ainda não tenho certeza se eu estou
+                aproveitando bem o que eu aprendi, porém mesmo assim estou sempre a procura de novos conhecimentos e
+                estou sempre pronto para novos desafios.
                 </p>
             </div>
         </section>
 
-    </main> 
+    </main>
     <!--  -->
     <footer>
 
     </footer>
     <!--  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
     <script src="./src/js/index.js"></script>
 </body>
+
 </html>

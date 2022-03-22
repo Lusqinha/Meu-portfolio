@@ -1,7 +1,13 @@
 
+.icoColors{
+   background-color: #31373d
+}
 
+.bgColor{
+    background-color: #212529;
+}
 .txtColor{
-    color: white;
+    color: rgb(179, 179, 179);
 }
 
 .crsImg{
@@ -13,4 +19,13 @@
 .fonteNova{
     font-family: 'Pacifico', cursive;
     font-family: 'Playfair Display', serif;
+}
+
+.titleColor{
+    color: rgb(255, 255, 255);
+}
+
+.icoSize{
+    width: 60px;
+    height: 60px;
 }
