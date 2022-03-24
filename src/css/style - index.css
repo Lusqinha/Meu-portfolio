@@ -60,7 +60,7 @@
     transform: translate3d(-30%, 0, 0);
 }
 [data-anime="right"]{
-    transform: translate3d(30%, 0, 0);
+    transform: translate3d(-30%, 0, 0);
 }
 
 [data-anime].animate {
