@@ -1,6 +1,24 @@
 
 .icoColors{
-   background-color: #31373d;
+   background-color: #1c2126;
+}
+
+.glassMo{
+    background: rgba( 165, 165, 165, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 11.5px );
+    -webkit-backdrop-filter: blur( 11.5px );
+    border-radius: 10px;
+    }
+
+.bioColor{
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+ 
+}
+
+.bioTxtColor{
+    color: #ffffff;
 }
 
 .bgColor{
@@ -19,6 +37,7 @@
 .fonteNova{
     font-family: 'Pacifico', cursive;
     font-family: 'Playfair Display', serif;
+    font-weight: bold;
 }
 
 .titleColor{
@@ -60,7 +79,7 @@
     transform: translate3d(-30%, 0, 0);
 }
 [data-anime="right"]{
-    transform: translate3d(30%, 0, 0);
+    transform: translate3d(100px, 0, 0);
 }
 
 [data-anime].animate {
@@ -71,4 +90,13 @@
 .borderColor{
     background-color: #262e38;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.boxSha{
+    background-color: #262e38;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.invisivel{
+    display: none;
 }

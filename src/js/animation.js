@@ -5,7 +5,7 @@ const icons = document.querySelectorAll('.icoSize');
 const timeline = new TimelineLite();
 
 timeline
-    .from(icons, 1.3,{y: -100, opacity: 0})
+    .from(icons, 1,{y: -100, opacity: 0})
     .to(icons, 0, {y: 0, opacity: 1})
 
 // Animação de ir ao topo
@@ -50,8 +50,16 @@ function animeScroll(){
 animeScroll();
 
 
+
 if(target.length){
     window.addEventListener('scroll', debounce(function(){
         animeScroll()
     },100))
 }
+
+// carrossel front to back
+const bioItem = document.querySelectorAll('.bioItens');
+
+bioItem.addEventListener('click', (e)=>{
+    // resolver mais terde
+})
