@@ -79,12 +79,21 @@
     transform: translate3d(-30%, 0, 0);
 }
 [data-anime="right"]{
+<<<<<<< HEAD
     transform: translate3d(100px, 0, 0);
+=======
+    transform: translate3d(-30%, 0, 0);
+>>>>>>> 04a93e4f993183fe01cc6b95fc634809bd812633
 }
 
 [data-anime].animate {
     opacity: 1;
     transform: translate3d(0, 0, 0);
+}
+
+.cardanime:hover {
+    transform: scale(1.04);
+    transition: .3s;
 }
 
 .borderColor{
