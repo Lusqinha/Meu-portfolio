@@ -1,24 +1,4 @@
 
-
-// Animação de elementos "Proficiências"
-const icons = document.querySelectorAll('.icoSize');
-const timeline = new TimelineLite();
-
-timeline
-    .from(icons, 1,{y: -100, opacity: 0})
-    .to(icons, 0, {y: 0, opacity: 1})
-
-// Animação de ir ao topo
-const titulo = document.getElementById('titulo');
-
-titulo.addEventListener('click', ()=>{
-    window.scrollTo({
-        top: 0, 
-        behavior: 'smooth'
-    })
-})
-
-// Animação de surgimento do texto
 const debounce = (func, wait, immediate)=>{
     let timeout;
     return function(...args){
@@ -34,6 +14,50 @@ const debounce = (func, wait, immediate)=>{
     }
 }
 
+// Animação de elementos "Proficiências"
+const icons = document.querySelectorAll('.icoSize');
+const timeline = new TimelineLite();
+
+timeline
+    .from(icons, 1,{y: -100, opacity: 0})
+    .to(icons, 0, {y: 0, opacity: 1})
+
+
+// Animação de trabalhos
+// const cards = document.querySelectorAll('.cardsContainer');
+// const timeline2 = new TimelineLite();
+
+// function cardAnime(){
+//     const windowTop = window.pageYOffset + (window.innerHeight * 1.5)
+//     cards.forEach(function(e){
+//         if(windowTop > e.offsetTop){
+//             timeline2
+//                 .from(cards, .5,{y: -20, opacity: 0})
+//                 .to(cards, 0, {y: 0, opacity: 1})
+//         }
+//     })
+// }
+
+// if(cards.length){
+//     window.addEventListener('scroll', debounce(function(){
+//         cardAnime()
+//     },1000))
+// }
+
+
+// Animação de ir ao topo
+const titulo = document.getElementById('titulo');
+
+titulo.addEventListener('click', ()=>{
+    window.scrollTo({
+        top: 0, 
+        behavior: 'smooth'
+    })
+})
+
+// Animação de surgimento do texto
+
+
 const target = document.querySelectorAll('[data-anime]');
 const animationClass = 'animate';
 
@@ -48,7 +72,7 @@ function animeScroll(){
     })
 }
 animeScroll();
-
+animeScroll();
 
 
 if(target.length){
@@ -57,9 +81,12 @@ if(target.length){
     },100))
 }
 
+
 // carrossel front to back
 const bioItem = document.querySelectorAll('.bioItens');
 
-bioItem.addEventListener('click', (e)=>{
-    // resolver mais terde
-})
+// bioItem.addEventListener('click', (e)=>{
+//     // resolver mais terde
+//     console.log("clicou")
+//     return
+// })
