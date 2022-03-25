@@ -1,137 +1,139 @@
 .icoColors {
-  background-color: #1c2126;
+    background-color: #1c2126;
 }
 
 .glassMo {
-  background: rgba(165, 165, 165, 0.05);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(11.5px);
-  -webkit-backdrop-filter: blur(11.5px);
-  border-radius: 10px;
+    background: rgba(165, 165, 165, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(11.5px);
+    -webkit-backdrop-filter: blur(11.5px);
+    border-radius: 10px;
 }
 
 .bioColor {
-  background-color: #4158d0;
-  background-image: linear-gradient(
-    43deg,
-    #4158d0 0%,
-    #c850c0 46%,
-    #ffcc70 100%
-  );
+    background-color: #4158d0;
+    background-image: linear-gradient(43deg,
+            #4158d0 0%,
+            #c850c0 46%,
+            #ffcc70 100%);
 }
 
 .bioTxtColor {
-  color: #ffffff;
+    color: #ffffff;
 }
 
 .bgColor {
-  background-color: #212529;
+    background-color: #212529;
 }
+
 .txtColor {
-  color: rgb(179, 179, 179);
+    color: rgb(179, 179, 179);
 }
 
 .crsImg {
-  object-fit: cover;
-  object-position: auto 30%;
-  height: 550px;
+    object-fit: cover;
+    object-position: auto 30%;
+    height: 550px;
 }
 
 .fonteNova {
-  font-family: "Pacifico", cursive;
-  font-family: "Playfair Display", serif;
-  font-weight: bold;
+    font-family: "Pacifico", cursive;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
 }
 
 .textContainer:hover {
-  transform: scale(1.05);
-  transition: 0.5s;
+    transform: scale(1.05);
+    transition: 0.5s;
 }
 
 .fonteNova2 {
-  font-family: "Syncopate", sans-serif;
+    font-family: "Syncopate", sans-serif;
 }
 
 .titleColor {
-  color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
 }
 
 .icoSize {
-  width: 55px;
-  height: 55px;
+    width: 55px;
+    height: 55px;
 }
 
 .boxColor {
-  background-color: #15171a;
+    background-color: #15171a;
 }
 
 .boxShadow {
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+        rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .cardSize {
-  width: 18rem;
+    width: 18rem;
 }
 
 .bodyColor {
-  background-color: #363a3f;
+    background-color: #363a3f;
 }
 
 .cardBcolor {
-  background-color: #20252b;
+    background-color: #20252b;
 }
 
 [data-anime] {
-  opacity: 0;
-  transition: 0.5s;
+    opacity: 0;
+    transition: 0.5s;
 }
 
 [data-anime="left"] {
-  transform: translate3d(-30%, 0, 0);
+    transform: translate3d(-30%, 0, 0);
 }
+
 [data-anime="right"] {
-  transform: translate3d(100px, 0, 0);
+    transform: translate3d(100px, 0, 0);
 }
 
 [data-anime].animate {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
 }
 
 .cardanime:hover {
-  transform: scale(1.04);
-  transition: 0.3s;
+    transform: scale(1.04);
+    transition: 0.3s;
 }
 
 .borderColor {
-  background-color: #262e38;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    background-color: #262e38;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .boxSha {
-  background-color: #262e38;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    background-color: #262e38;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .invisivel {
-  display: none;
+    display: none;
 }
 
 .desktop {
-  display: flex;
+    display: flex;
 }
+
 .mobile {
-  display: none;
+    display: none;
 }
 
 @media (max-width: 770px) {
-  .desktop {
-    display: none;
-  }
-  .mobile {
-    display: flex;
-  }
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+    }
 }
