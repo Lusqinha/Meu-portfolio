@@ -1,3 +1,3 @@
-# | <📓> Lucas - Portifólio |
+# | 📓 Lucas - Portifólio |
 
 ---
