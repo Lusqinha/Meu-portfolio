@@ -81,12 +81,34 @@ if(target.length){
     },100))
 }
 
+// .
+const navbar = document.querySelector('.navbar');
+const navbarIdealHeight = 1050;
 
-// carrossel front to back
-const bioItem = document.querySelectorAll('.bioItens');
 
-// bioItem.addEventListener('click', (e)=>{
-//     // resolver mais terde
-//     console.log("clicou")
-//     return
-// })
+    window.addEventListener('scroll', debounce(function(){
+        if(window.scrollY > navbarIdealHeight){
+            navbar.classList.add('navbar-fixed')
+            navbar.classList.remove('navBgTrans')
+            navbar.classList.add('bg-dark')
+        }else{
+            navbar.classList.remove('navbar-fixed')
+            navbar.classList.add('navBgTrans')
+            navbar.classList.remove('bg-dark')
+        }
+    }))
+
+    // ..
+function typeWriter(elemento){
+    const textoArray = elemento.innerHTML.split('');
+    elemento.innerHTML = '';
+    textoArray.forEach((letra, i)=>{
+        setTimeout(()=>{
+            elemento.innerHTML += letra;
+        }, 75 * i)
+    })
+}
+
+const title = document.getElementById('textoNome')
+typeWriter(title);
+

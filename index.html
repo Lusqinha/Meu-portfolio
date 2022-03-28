@@ -27,18 +27,21 @@
     <link href="./src/css/style - index.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
+
 </head>
 
 
-<body class="bodyColor">
+<body class="bioColor">
     <!--  -->
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-expand-md navbar-dark navBgTrans fixed-top">
             <div class="container-fluid">
-                <a id="titulo" class="navbar-brand fonteNova"><lord-icon src="https://cdn.lordicon.com/stxtcyyo.json" trigger="morph" colors="primary:#ffffff"
+                <a id="titulo" class="navbar-brand fonteNova">
+                    <lord-icon src="https://cdn.lordicon.com/stxtcyyo.json" trigger="morph" colors="primary:#ffffff"
                         state="morph" style="width:30px;height:30px">
                     </lord-icon> Lucas |
-                    Portfólio</a>
+                    Portfólio
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -66,19 +69,34 @@
     </header>
     <!--  -->
     <main>
-        <section class="bioColor py-5" id="apresentação">
+        <section class="bioColor border-bottom py-sm-4 p-md-4 p-lg-5" id="apresentação" >
+            <article class="meuNome container pt-2">
+                <div class="row my-5 p-5 align-items-center bioItens" data-anime="right">
+                    <div class="col-12 col-md-6">
+                        <img src="./svg/bioNome.svg" class="desktop apresentacaoSvg">
+                    </div>
+                    <div class="col-12 col-md-6 glassMo alinhamentoMob py-4">
+                        <h1 class="bioTxtColor fs-sm-3">
+                            Olá, me chamo <br>
+                             <span class="highlightColor">Lucas</span>
+                        </h1>
+                        <h2 id="textoNome" class="fs-sm-5 bioTxtColor nome"> Sou um desenvolvedor web Full-Stack.</h2>
+                    </div>
+                    
+                </div>
+            </article>
+            <!--  -->
             <article id="back" data-anime="right" class="bioItens">
                 <div class="container mt-5">
                     <div class="row p-5
-                            justify-content-between
-                            align-items-center">
+                            justify-content-center align-items-center">
                         <div class="col-12 col-md-6">
                             <h1 class="fonteNova2
                                     bioTxtColor
                                     text-center">
                                 Front-End
                             </h1>
-                            <a><img class="p-3" style="width: 100%;" src="./svg/frontend.svg"></img></a>
+                            <a><img class="p-3" style="width: 110%;" src="./svg/frontend.svg"></img></a>
                         </div>
                         <div class="col-12 col-md-6">
                             <p class="bioTxtColor fs-5 fs-md-1
@@ -188,14 +206,12 @@
                 </div>
         </section>
         <!--  -->
-        <section id="proficiencias" class="navbar-dark pb-lg-5 p-2
-                icoColors">
-            <h1 class="titleColor fonteNova
+        <section id="proficiencias" class="border-top navbar-dark pb-lg-5 p-2">
+            <h1 class="titleColor fonteNova2
                     text-center fs-1 p-3">| <i class="bi bi-code"></i>
                 Proficiências <i class="bi bi-code-slash"></i> |</h1>
-            <nav class="navbar navbar-dark p-3
-                    icoColors">
-                <div class="container">
+            <nav class="navbar navbar-dark p-3">
+                <div class="container pb-5">
                     <div class="row mx-auto justify-content-center">
                         <a class="col-2 col-md-1 col-lg-1 navbar-brand">
                             <img src="svg\icoJavascript.svg" title="JavaScript" class="icoSize">
@@ -227,14 +243,14 @@
             </nav>
         </section>
         <!--  -->
-        <section class="bgColor p-xxl-5 p-xl-4
+        <section class=" p-xxl-5 p-xl-4
                 p-md-3 p-2" id="bio">
             <div class="container">
                 <div id="front-end" data-anime="left" class="textoFront
                         my-1 py-1 px-3 boxShadow
-                        boxColor">
+                        glassMo">
                     <h1 class="titulo pb-3
-                            titleColor fonteNova
+                            titleColor fonteNova2
                             text-center">Front-End</h1>
                     <p class="txtColor">
                         O estudo do <strong>Front-End</strong>
@@ -328,9 +344,9 @@
                 </div>
                 <div id="back-end" data-anime="right" class="textoBack
                         my-5 py-3 px-3 boxShadow
-                        boxColor">
+                        glassMo">
                     <h1 class="titulo pb-3
-                            titleColor fonteNova
+                            titleColor fonteNova2
                             text-center">Back-End</h1>
                     <p class="txtColor">
                         Minha relação com <strong>Python</strong>
@@ -391,8 +407,8 @@
         </section>
         <section class="py-5 icoColors" id="trabalhos">
             <h1 class="titleColor fonteNova
-                    text-center pb-2">| <i class="bi bi-code"></i> Meus
-                Projetos <i class="bi bi-code-slash"></i> |</h1>
+                    text-center pb-2"> <i class="bi bi-code"></i> Meus
+                Projetos <i class="bi bi-code-slash"></i> </h1>
             <div class="container cardsContainer mx-auto">
                 <div class="row
                         justify-content-center">
@@ -611,38 +627,39 @@
     <!--  -->
 
 
-    <div class="container">
-        <footer class="d-flex flex-wrap
-                justify-content-between
-                bodyColor align-items-center py-2 my-5
-                border-top">
+
+    <footer class="bodyColor">
+        <div class="container d-flex flex-wrap
+        justify-content-between
+        bodyColor align-items-center py-2">
             <div id="titulo" class="col-md-4 d-flex
-                    align-items-center">
+                        align-items-center">
                 <p class="txtColor">| <i class="bi
-                            bi-journal-code
-                            txtColor fs-5"></i> Lucas
+                                bi-journal-code
+                                txtColor fs-5"></i> Lucas
                     Portfólio |
                     &copy;
                     moravec.rocks | </p>
             </div>
 
             <ul class="nav col-md-4
-                    justify-content-end
-                    list-unstyled
-                    d-flex">
+                        justify-content-end
+                        list-unstyled
+                        d-flex">
                 <li class="ms-3"><a class="text-muted" href="https://t.me/lusqinha"><i class="bi
-                                bi-telegram txtColor" target="_blank" rel="noopener
-                                noreferrer"></i></a></li>
+                                    bi-telegram txtColor" target="_blank" rel="noopener
+                                    noreferrer"></i></a></li>
                 <li class="ms-3"><a class="text-muted" href="https://www.linkedin.com/in/lucas-borges-da-silva-sls/"
                         target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin
-                                txtColor"></i></a></li>
+                                    txtColor"></i></a></li>
                 <li class="ms-3"><a class="text-muted" href="https://github.com/Lusqinha" target="_blank"
                         rel="noopener noreferrer"><i class="bi
-                                bi-github
-                                txtColor"></i></a></li>
+                                    bi-github
+                                    txtColor"></i></a></li>
             </ul>
-        </footer>
-    </div>
+        </div>
+    </footer>
+
 
 
     <!--  -->
