@@ -61,7 +61,7 @@ if(target.length){
 
 // .
 const navbar = document.querySelector('.navbar');
-const navbarIdealHeight = 1050;
+const navbarIdealHeight = 1100;
 
 
     window.addEventListener('scroll', debounce(function(){
