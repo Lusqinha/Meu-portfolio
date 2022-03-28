@@ -23,28 +23,6 @@ timeline
     .to(icons, 0, {y: 0, opacity: 1})
 
 
-// Animação de trabalhos
-// const cards = document.querySelectorAll('.cardsContainer');
-// const timeline2 = new TimelineLite();
-
-// function cardAnime(){
-//     const windowTop = window.pageYOffset + (window.innerHeight * 1.5)
-//     cards.forEach(function(e){
-//         if(windowTop > e.offsetTop){
-//             timeline2
-//                 .from(cards, .5,{y: -20, opacity: 0})
-//                 .to(cards, 0, {y: 0, opacity: 1})
-//         }
-//     })
-// }
-
-// if(cards.length){
-//     window.addEventListener('scroll', debounce(function(){
-//         cardAnime()
-//     },1000))
-// }
-
-
 // Animação de ir ao topo
 const titulo = document.getElementById('titulo');
 
