@@ -17,8 +17,11 @@ const debounce = (func, wait, immediate)=>{
 // Animação de elementos "Proficiências"
 const icons = document.querySelectorAll('.icoSize');
 const timeline = new TimelineLite();
+const animaTxt = document.querySelectorAll('.animaTxt');
 
 timeline
+    .from('.animaTxt', 1, {y: -100, opacity: 0})
+    .to('.animaTxt', 0, {y: 0, opacity: 1})
     .from(icons, 1,{y: -100, opacity: 0})
     .to(icons, 0, {y: 0, opacity: 1})
 
@@ -50,7 +53,6 @@ function animeScroll(){
     })
 }
 animeScroll();
-animeScroll();
 
 
 if(target.length){
@@ -59,22 +61,21 @@ if(target.length){
     },100))
 }
 
-// .
-const navbar = document.querySelector('.navbar');
-const navbarIdealHeight = 1200;
+// Melhorar código no futuro
+// const navbar = document.querySelector('.navbar');
+// const navbarIdealHeight = 1200;
 
-
-    window.addEventListener('scroll', debounce(function(){
-        if(window.scrollY > navbarIdealHeight){
-            navbar.classList.add('navbar-fixed')
-            navbar.classList.remove('navBgTrans')
-            navbar.classList.add('bg-dark')
-        }else{
-            navbar.classList.remove('navbar-fixed')
-            navbar.classList.add('navBgTrans')
-            navbar.classList.remove('bg-dark')
-        }
-    }))
+// window.addEventListener('scroll', debounce(function(){
+//     if(window.scrollY > navbarIdealHeight){
+//         navbar.classList.add('navbar-fixed')
+//         navbar.classList.remove('navBgTrans')
+//         navbar.classList.add('bg-dark')
+//     }else{
+//         navbar.classList.remove('navbar-fixed')
+//         navbar.classList.add('navBgTrans')
+//         navbar.classList.remove('bg-dark')
+//     }
+// },100))
 
     // ..
 function typeWriter(elemento){
